@@ -1,9 +1,11 @@
 import Navbar from "./components/Navbar";
+import SocialBar from "./components/SocialBar";
 
 export default function Home() {
   return (
     <>
       <Navbar />
+      <SocialBar />
       <main className="min-h-screen flex flex-col items-center text-center px-6 bg-gradient-to-b from-black via-zinc-900 to-black text-white pt-24">
         {/* HERO */}
         <section className="w-full max-w-6xl flex flex-col md:flex-row items-center justify-between min-h-[80vh] gap-12">
@@ -20,20 +22,30 @@ export default function Home() {
               Front-End UI Specialist focused on crafting modern, visually
               appealing, and intuitive web interfaces.
             </p>
-            
+
             {/* CONTACT */}
-        <div className="w-full flex justify-center gap-6 mt-12 flex-wrap">
-          <a href="mailto:your-email@example.com" className="px-6 py-3 bg-blue-600 hover:bg-blue-500 transition rounded-lg">
-            Email
-          </a>
-          <a href="https://github.com/ronalirami" target="_blank" className="px-6 py-3 bg-zinc-800 hover:bg-zinc-700 transition rounded-lg">
-            GitHub
-          </a>
-          <a href="https://linkedin.com/in/ronalirami" target="_blank" className="px-6 py-3 bg-zinc-800 hover:bg-zinc-700 transition rounded-lg">
-            LinkedIn
-          </a>
-        </div>
-      
+            <div className="w-full flex justify-center gap-6 mt-12 flex-wrap md:hidden">
+              <a
+                href="mailto:ronaruirami@gmail.com"
+                className="px-6 py-3 bg-blue-600 hover:bg-blue-500 transition rounded-lg"
+              >
+                Email
+              </a>
+              <a
+                href="https://github.com/ronalirami"
+                target="_blank"
+                className="px-6 py-3 bg-zinc-800 hover:bg-zinc-700 transition rounded-lg"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://linkedin.com/in/ronalirami"
+                target="_blank"
+                className="px-6 py-3 bg-zinc-800 hover:bg-zinc-700 transition rounded-lg"
+              >
+                LinkedIn
+              </a>
+            </div>
           </div>
 
           {/* RIGHT SIDE - PHOTO */}
@@ -45,8 +57,6 @@ export default function Home() {
             />
           </div>
         </section>
-
-        
 
         {/* ABOUT */}
         <section id="about" className="w-full max-w-5xl mt-32">
@@ -66,6 +76,7 @@ export default function Home() {
           </p>
 
           <div className="flex justify-center gap-6 flex-wrap">
+            <span className="px-4 py-2 bg-zinc-800 rounded-lg">My Skills</span>
             <span className="px-4 py-2 bg-zinc-800 rounded-lg">Next.js</span>
             <span className="px-4 py-2 bg-zinc-800 rounded-lg">React</span>
             <span className="px-4 py-2 bg-zinc-800 rounded-lg">
